@@ -1,0 +1,12 @@
+name: ml_env
+channels:
+- conda-forge
+dependencies:
+- python=3.7
+- pip
+- pip:
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
