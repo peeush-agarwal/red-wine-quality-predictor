@@ -11,10 +11,6 @@ def load_data() -> pd.DataFrame:
 def clean_data(df:pd.DataFrame) -> pd.DataFrame:
     return df.drop_duplicates()
 
-def normalize_data(df:pd.DataFrame, target_col_name:str) -> np.ndarray:
-    scaler = StandardScaler()
-    return scaler.fit_transform(df.drop(target_col_name, axis=1))
-
 def plot_data(df:pd.DataFrame, target_col_name:str):
     plt.figure(figsize=(16,16))
 
